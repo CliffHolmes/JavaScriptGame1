@@ -1,0 +1,31 @@
+var user = prompt("What kind of powers do you have?").toUpperCase();
+
+switch(user) {
+    case 'FLIGHT':
+        var cape = prompt("Do you wear a cape when you fly?").toUpperCase();
+        var strong = prompt("Do you have incredible strength?").toUpperCase();
+        
+        if (cape === "yes" || strong === "yes"){
+        console.log("You have something in common with Superman, Shazaam and Thor.");
+        }
+        else{
+            console.log("Capes make you look cool!");
+        }
+        break;
+    case 'SPEED':
+        console.log("I wonder if you are faster than the flash.");
+        break;
+    case 'INTELLIGENCE':
+        var suits = prompt("Do like to build Iron Suits?").toUpperCase();
+        var weapons = prompt("Do you like to make weapons?").toUpperCase();
+        var minions = prompt("Do you have an army of minions?").toUpperCase();
+        if (minions === "yes" && Weapons === "yes"){ 
+        console.log("Are you trying to take over the world?");
+        }
+        else {
+            console.log("Can you please build me a suit of armor?");
+        }
+        break;
+    default:
+        console.log("You should join the Justice League.");
+}
